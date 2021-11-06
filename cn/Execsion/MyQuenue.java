@@ -26,6 +26,7 @@ public class MyQuenue {
             newArr[i]=elements[i+1];
         }
     elements=newArr;
+
     }
 
 }
