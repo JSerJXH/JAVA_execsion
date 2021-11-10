@@ -61,12 +61,32 @@ public class TreeNode {
         System.out.println(value);
     }
 
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "value=" + value +
+                ", zNode=" + zNode +
+                ", yNode=" + yNode +
+                '}';
+    }
+
     public TreeNode frontSearch(int i) {
+       TreeNode target = null;
         if(value ==i){
             return this;
         }
-        if()
-        return null;
+        if(zNode!=null){
+            target=zNode.frontSearch(i);
+        }
+        if(target!=null){
+            return target;
+        }
+        if(yNode!=null){
+            target=yNode.frontSearch(i);
+        }
+
+        return target;
+
     }
 }
 

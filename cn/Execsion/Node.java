@@ -5,6 +5,8 @@ public class Node {
     int data;
     //下一个节点
     Node next;
+    private int value;
+
     public Node(int j){
         data = j;
     }

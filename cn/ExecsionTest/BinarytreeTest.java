@@ -36,6 +36,8 @@ public class BinarytreeTest {
         System.out.println("====================");
         //前序查找
         TreeNode result = bintree.frontSearch(5);
+        System.out.println(result);
+        System.out.println("====================");
 
 
 

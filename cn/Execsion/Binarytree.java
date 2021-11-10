@@ -23,7 +23,11 @@ public class Binarytree {
         root.afterShow();
     }
 
+
+
+
     public TreeNode frontSearch(int i) {
         return root.frontSearch(i);
+
     }
 }
