@@ -4,17 +4,17 @@ public class Node {
     //节点内容
     int data;
     //下一个节点
-    Node next;
+    com.cn.huffmancode.Node next;
     private int value;
 
     public Node(int j){
         data = j;
     }
-    public Node append(Node i){
+    public com.cn.huffmancode.Node append(com.cn.huffmancode.Node i){
        //当前节点
-        Node currentNode =this;
+        com.cn.huffmancode.Node currentNode =this;
         while (true){
-            Node nextNode = currentNode.next;
+            com.cn.huffmancode.Node nextNode = currentNode.next;
             if(nextNode == null){
                 break;
             }
@@ -26,7 +26,7 @@ public class Node {
 
     }
     //取出下一个节点
-    public Node next(){
+    public com.cn.huffmancode.Node next(){
         return next;
     }
 
