@@ -1,0 +1,15 @@
+SJJSJ
+HDKSK
+HJSKDJSKL
+JKSJDLS
+JKSLJDLKSJDKLS
+JLKSJDLKJSL
+JDLKSJDLKJSL
+JLDKJSLDJSLK
+HJKLSDLJSKLDJLS
+LKJDKLJSLK
+JDKSLJDLSJDLKSJ
+DJSKLDJSLKDJS
+JLKJDL;JSL;DS;'DS;'
+drop table if exists t_user;
+create table t_user( id int primary key,username varchar (255), email varchar (255),) ;
