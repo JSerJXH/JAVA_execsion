@@ -1,0 +1,13 @@
+select 
+	xxx
+from
+	xx
+where
+	xx
+group by
+	xxx
+having ...
+order by..
+mysql -uroot -p
+show databases;
+show tables;
