@@ -1,0 +1,1 @@
+select t.* , e.ename,e.sal from emp e join  (select deptno, avg(sal) as avgsal from emp group by deptno) t on e.deptno = t.deptno and e.sal >t.avgsal;
