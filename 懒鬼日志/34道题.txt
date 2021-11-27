@@ -1,1 +1,37 @@
 select t.* , e.ename,e.sal from emp e join  (select deptno, avg(sal) as avgsal from emp group by deptno) t on e.deptno = t.deptno and e.sal >t.avgsal;
+
+
+
+
+select
+t.*,e.grade
+from
+salgrade e
+join 
+(select deptno, avg(sal) as avgsal from emp group by deptno) t
+on 
+t.avgsal between e.losal and e.hisal;
+
+2.
+select
+e.deptno,e.ename,e.sal,s.grade
+from
+emp e
+join 
+salgrade s
+on
+e.sal between s.losal and s.hisal;
+
+基于之上的基础在进行分组就好
+select
+e.deptno,e.ename,e.sal,s.grade,avg(s.grade) as avggrade
+from
+emp e
+join 
+salgrade s
+on
+e.sal between s.losal and s.hisal
+group by
+e.deptno
+order by
+s.grade;
