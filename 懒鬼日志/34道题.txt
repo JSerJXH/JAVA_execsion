@@ -35,3 +35,66 @@ group by
 e.deptno
 order by
 s.grade;
+
+
+4
+select ename,sal from emp order by sal desc
+
+5
+select 
+deptno,avg(sal) as avgsal
+from
+emp
+group by
+deptno 
+order by
+avgsal
+desc
+limit
+1;
+
+select
+t.deptno,max(t.avgsal)
+from
+(select 
+deptno,avg(sal) as avgsal
+from
+emp
+group by
+deptno )t
+group by
+t.deptno
+
+6
+select 
+max(sal),deptno
+from
+emp
+group by
+deptno
+
+select
+e.deptno,t.dname,e.sal
+from
+emp e
+join 
+dept t
+on
+t.deptno=e.deptno
+group by
+deptno
+order by
+
+select
+t.dname
+from
+emp e
+join 
+dept t
+on
+t.deptno=e.deptno
+group by
+deptno
+order by
+dname
+desc
