@@ -12,6 +12,8 @@
         <module>myabits-01</module>
         <module>myabist-02</module>
         <module>mybatis-03</module>
+
+        <module>myabist-04</module>
     </modules>
 
     <properties>
