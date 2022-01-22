@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="true">
+<servlet>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>com.chd.servlet.ShowServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/hi</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>CharacterRncodingFiler01</filter-name>
+        <filter-class>com.chd.edu.CharacterRncodingFiler01</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterRncodingFiler01</filter-name>
+        <url-pattern>/servlet/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
